@@ -44,5 +44,11 @@ function menuMaker(linksArrray) {
     menuList.appendChild(link);
   })
 
+  const menuButton = document.querySelector('.menu-button');
+
+  menuButton.addEventListener('click', () =>{
+    document.querySelector('.menu').classList.toggle('menu--open');
+  })
+
   return menuWrapper;
 }
