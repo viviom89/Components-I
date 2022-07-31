@@ -135,6 +135,13 @@ function articleMaker(articleObj) {
   articleWrapper.appendChild(articleParagraphThree);
   articleWrapper.appendChild(expandButton);
 
+  articleTitle.textContent = articleObj.title;
+  articleDate.textContent = articleObj.date;
+  articleParagraphOne.textContent = articleObj.firstParagraph;
+  articleParagraphTwo.textContent = articleObj.secondParagraph;
+  articleParagraphThree.textContent = articleObj.thirdParagraph;
+  expandButton.textContent = "+";
+
   expandButton.addEventListener("click", () => {
     articleWrapper.classList.toggle("article-open");
   })
@@ -144,5 +151,5 @@ function articleMaker(articleObj) {
 
 data.forEach(article => {
   document.querySelector("div.articles").appendChild(articleMaker(article));
-  
+
 });
