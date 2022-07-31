@@ -142,4 +142,7 @@ function articleMaker(articleObj) {
   return articleWrapper;
 }
 
-articleMaker();
+data.forEach(article => {
+  document.querySelector("div.articles").appendChild(articleMaker(article));
+  
+});
