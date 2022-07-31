@@ -53,4 +53,5 @@ function menuMaker(linksArrray) {
 
   return menuWrapper;
 }
+document.querySelector(".header").appendChild(menuMaker(menuItems));
 
