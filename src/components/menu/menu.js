@@ -48,8 +48,9 @@ function menuMaker(linksArrray) {
   const menuButton = document.querySelector(".menu-button");
 
   menuButton.addEventListener("click", () =>{
-    menuWrapper.querySelector("div.menu").classList.toggle("menu--open");
+    menuWrapper.classList.toggle("menu--open");
   })
 
   return menuWrapper;
 }
+
