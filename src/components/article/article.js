@@ -134,4 +134,12 @@ function articleMaker(articleObj) {
   articleWrapper.appendChild(articleParagraphTwo);
   articleWrapper.appendChild(articleParagraphThree);
   articleWrapper.appendChild(expandButton);
+
+  expandButton.addEventListener("click", () => {
+    articleWrapper.classList.toggle("article-open");
+  })
+
+  return articleWrapper;
 }
+
+articleMaker();
